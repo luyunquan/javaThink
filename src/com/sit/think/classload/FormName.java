@@ -4,12 +4,15 @@ interface  Waterproof{};
 interface  Shoots{}
 class Toys{
 	public Toys(){
-		System.out.println("toysinit");
+		System.out.println("toysinit 测试的得到");
 	}
+	
 	public Toys(String str){
 		System.out.println("toys "+str);
 	}
 }
+
+
 class FancyToy extends Toys implements HasBatteries,Waterproof,Shoots{
 	 FancyToy(){
 		 super("3");
@@ -23,6 +26,7 @@ public class FormName {
 		}catch(Exception e){
 			System.exit(1);
 		}
+		
 		System.out.println(c.getName());
 		for(Class  cl:c.getInterfaces()){
 			System.out.println(cl.getName());
