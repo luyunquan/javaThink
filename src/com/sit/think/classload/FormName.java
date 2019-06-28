@@ -15,8 +15,7 @@ class Toys{
 
 class FancyToy extends Toys implements HasBatteries,Waterproof,Shoots{
 	 FancyToy(){
-		 
-		 super("3");
+		 super("3"); 
 	 }
 }
 public class FormName {
